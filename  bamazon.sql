@@ -24,3 +24,18 @@ INSERT INTO products (item_id, product_name, department_name, price, stock_quant
 VALUES ("5", "Oil", "Grocery",7.50,10);
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
 VALUES ("6", "Salt", "Grocery",0.50,15);
+
+
+CREATE TABLE departments (
+  department_id INT NOT NULL,
+  department_name VARCHAR(100) NULL,
+  over_head_costs INT NULL,
+  total_sales INT NULL,
+  PRIMARY KEY (department_id)
+);
+
+
+INSERT INTO departments (department_id, department_name, over_head_costs, total_sales)
+VALUES ("01", "Electronics", 10000,20000);
+INSERT INTO departments (department_id, department_name, over_head_costs, total_sales)
+VALUES ("02", "Clothing", 60000, 100000);
